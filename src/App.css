@@ -180,3 +180,7 @@ form button {
 .card.sem-casa {
   border-color: #4a5c4e;
 }
+
+.card.sem-casa button {
+  background-color: #4a5c4e;
+}
