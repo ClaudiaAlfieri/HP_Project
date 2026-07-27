@@ -5,11 +5,17 @@ import CharacterCard from "./components/CharacterCard";
 import "./App.css";
 
 function App() {
-  const [characters, setCharacters] = useState([]);
+  const [characters, setCharacters] = useState(() => {
+    const saved = localStorage.getItem("hp-characters");
+    return saved ? JSON.parse(saved) : [];
+  });
   const [houseFilter, setHouseFilter] = useState("todas");
   const [genderFilter, setGenderFilter] = useState("todos");
 
   useEffect(() => {
+    const saved = localStorage.getItem("hp-characters");
+    if (saved) return;
+
     fetch("https://hp-api.onrender.com/api/characters")
       .then((res) => res.json())
       .then((data) => {
@@ -17,6 +23,10 @@ function App() {
       })
       .catch((err) => console.error("Erro ao ir buscar dados:", err));
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("hp-characters", JSON.stringify(characters));
+  }, [characters]);
 
   function handleRemove(id) {
     setCharacters(characters.filter((c) => c.id !== id));
