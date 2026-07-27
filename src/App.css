@@ -17,7 +17,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #d3a625; /* dourado */
+  color: #d3a625;
   letter-spacing: 1px;
   margin-bottom: 24px;
 }
@@ -49,15 +49,11 @@ form button {
   padding: 8px 16px;
   border: none;
   border-radius: 6px;
-  background-color: #740001; /* vermelho Gryffindor */
+  background-color: #740001;
   color: white;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s;
-}
-
-form button:hover {
-  background-color: #9e0000;
 }
 
 /* Filtros */
@@ -86,7 +82,7 @@ form button:hover {
 /* Cartão de personagem */
 .card {
   background-color: #1a2b20;
-  border: 1px solid #d3a625;
+  border: 3px solid #d3a625;
   border-radius: 10px;
   padding: 14px;
   text-align: center;
@@ -120,7 +116,6 @@ form button:hover {
 .card button {
   margin-top: 10px;
   padding: 6px 14px;
-  background-color: #740001;
   color: white;
   border: none;
   border-radius: 6px;
@@ -131,4 +126,57 @@ form button:hover {
 
 .card button:hover {
   background-color: #9e0000;
+}
+
+/* Cores por casa */
+.card.gryffindor {
+  border-color: #740001;
+  background: linear-gradient(160deg, #2a1414, #1a2b20);
+}
+.card.gryffindor h3 {
+  color: #eeba30;
+}
+
+.card.gryffindor button {
+  background-color: #740001;
+}
+
+.card.slytherin {
+  border-color: #1a472a;
+  background: linear-gradient(160deg, #10251a, #1a2b20);
+}
+.card.slytherin h3 {
+  color: #aaaaaa;
+}
+
+.card.slytherin button {
+  background-color: #0d4d2c;
+}
+
+.card.hufflepuff {
+  border-color: #ecb939;
+  background: linear-gradient(160deg, #2b2410, #1a2b20);
+}
+.card.hufflepuff h3 {
+  color: #ecb939;
+}
+
+.card.hufflepuff button {
+  background-color: #b8860b;
+}
+
+.card.ravenclaw {
+  border-color: #2645ac;
+  background: linear-gradient(160deg, #101a2b, #1a2b20);
+}
+.card.ravenclaw h3 {
+  color: #aaaaaa;
+}
+
+.card.ravenclaw button {
+  background-color: #2645ac;
+}
+
+.card.sem-casa {
+  border-color: #4a5c4e;
 }
