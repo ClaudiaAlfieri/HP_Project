@@ -3,6 +3,7 @@ import CharacterForm from "./components/CharacterForm";
 import FilterBar from "./components/FilterBar";
 import CharacterCard from "./components/CharacterCard";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [characters, setCharacters] = useState(() => {
@@ -57,6 +58,7 @@ function App() {
           <CharacterCard key={c.id} character={c} onRemove={handleRemove} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
