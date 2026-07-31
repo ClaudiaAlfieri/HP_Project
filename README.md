@@ -24,26 +24,19 @@ Aplicação em React que consome a [Harry Potter API](https://hp-api.onrender.co
 
 ## Como correr o projeto
 
-1. Clonar o repositório ou extrair a pasta comprimida (.zip)
-
-   ```bash
-   git clone <url-do-repositorio>
-   cd <nome-da-pasta>
-   ```
-
-2. Instalar as dependências
+1. Instalar as dependências
 
    ```bash
    npm install
    ```
 
-3. Iniciar o servidor de desenvolvimento
+2. Iniciar o servidor de desenvolvimento
 
    ```bash
    npm run dev
    ```
 
-4. Abrir o browser no endereço apresentado no terminal (normalmente `http://localhost:5173`)
+3. Abrir o browser no endereço apresentado no terminal (normalmente `http://localhost:5173`)
 
 ## Estrutura do projeto
 
@@ -65,4 +58,4 @@ src/
 
 ## Autor
 
-Trabalho desenvolvido no âmbito da unidade curricular UC00621 - Criar aplicações em React.
+Trabalho desenvolvido por Cláudia Alfieri no âmbito da unidade curricular UC00621 - Criar aplicações em React.
